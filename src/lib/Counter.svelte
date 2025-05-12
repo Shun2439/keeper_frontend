@@ -1,10 +1,7 @@
 <script lang="ts">
-  let count: number = $state(0)
-  const increment = () => {
-    count += 1
-  }
+  export let onClick: () => void;
 </script>
 
-<button onclick={increment}>
-  count is {count}
+<button onclick={onClick}>
+  もう一度おみくじを引く
 </button>
