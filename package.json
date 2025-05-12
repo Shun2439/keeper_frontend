@@ -1,28 +1,20 @@
 {
-  "name": "keeper_fontend",
-  "version": "0.1.0",
+  "name": "keeper_frontend",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@vanilla-extract/css": "^1.14.0",
-    "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
-    "the-new-css-reset": "^1.11.2"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@vanilla-extract/next-plugin": "^2.3.2",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "install": "^0.13.0",
-    "typescript": "^5"
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "@tsconfig/svelte": "^5.0.4",
+    "svelte": "^5.28.1",
+    "svelte-check": "^4.1.6",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
   }
 }
